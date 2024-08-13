@@ -41,7 +41,7 @@ function Home() {
         action={{
           type: "external",
           route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          label: "request demo",
           color: "info",
         }}
         sticky
