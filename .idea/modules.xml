@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/new_material_theme.iml" filepath="$PROJECT_DIR$/.idea/new_material_theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/suvicorp_ui.iml" filepath="$PROJECT_DIR$/.idea/suvicorp_ui.iml" />
     </modules>
   </component>
 </project>
