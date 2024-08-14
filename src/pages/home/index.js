@@ -30,7 +30,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/4k_background_Blockchain.gif";
 import Team from "../LandingPages/AboutUs/sections/Team";
 
 function Home() {
@@ -70,7 +70,7 @@ function Home() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              SUVICORP{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -79,8 +79,8 @@ function Home() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+               Transforming Data into Insight, Empowering Decisions with Precision.
+                Your Partner in Intelligent Audit and Analytics Solutions.
             </MKTypography>
           </Grid>
         </Container>

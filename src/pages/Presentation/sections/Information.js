@@ -66,16 +66,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  title="Digital Transformation"
+                  description="Received an incredible support from SUVI. Their team seamlessly integrated our digital transformation strategy with expert accounting services. They helped us modernize our operations while maintaining a keen eye on our financial health. The results speak for themselves— improved efficiency, reduced costs, and peace of mind. Highly recommended!"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  title="Financial Reporting"
+                  description="SUVI’s comprehensive accounting services have brought clarity and precision to our financial management. Simultaneously, their digital experts guided us through a successful digital transformation journey."
                 />
               </Grid>
             </Grid>
@@ -83,15 +82,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  title="Risk Consulting"
+                  description="Working with SUVI on our risk consulting needs has been a game-changer. Their team's proactive approach to identifying and mitigating risks has protected our investments and ensured business continuity. Their commitment to our success is commendable, and we're grateful for their partnership."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  title="CFO Consulting"
+                  description="We engaged SUVI to augment our financial leadership with their CFO consulting expertise. Their team's financial acumen, strategic insights, and dedication to our success were truly exceptional. With their guidance, we've optimized our financial strategies, improved profitability, and charted a clear path to growth. Highly recommend their CFO consulting services!"
                 />
               </Grid>
             </Grid>

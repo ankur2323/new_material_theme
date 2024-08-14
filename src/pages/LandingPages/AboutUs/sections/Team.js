@@ -58,9 +58,9 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={team1}
-                name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Jatin Bhatia"
+                position={{ color: "info", label: "Head, Accounting & Digital Transformation" }}
+                description="Head, Accounting & Digital Transformation"
               />
             </MKBox>
           </Grid>
@@ -68,9 +68,9 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Ritesh Shah"
+                position={{ color: "info", label: "Head, CFO Consulting & Financial Reporting" }}
+                description="Head, CFO Consulting & Financial Reporting"
               />
             </MKBox>
           </Grid>
