@@ -1,4 +1,4 @@
-const inputDisabledCode = `// @mui material components
+const inputDisabledCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 

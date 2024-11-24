@@ -1,4 +1,4 @@
-const badgesSimpleCode = `// @mui material components
+const badgesSimpleCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";

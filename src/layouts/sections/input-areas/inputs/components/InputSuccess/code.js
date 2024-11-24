@@ -1,4 +1,4 @@
-const inputSuccessCode = `// @mui material components
+const inputSuccessCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 

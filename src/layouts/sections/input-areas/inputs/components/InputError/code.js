@@ -1,4 +1,4 @@
-const inputErrorCode = `// @mui material components
+const inputErrorCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 

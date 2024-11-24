@@ -1,4 +1,4 @@
-const simpleAlertsCode = `// @mui material components
+const simpleAlertsCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 

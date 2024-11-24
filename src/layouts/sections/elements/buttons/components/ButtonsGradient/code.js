@@ -1,4 +1,4 @@
-const buttonsGradientCode = `// @mui material components
+const buttonsGradientCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";

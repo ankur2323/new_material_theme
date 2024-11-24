@@ -1,4 +1,4 @@
-const avatarSizeCode = `// @mui material components
+const avatarSizeCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";

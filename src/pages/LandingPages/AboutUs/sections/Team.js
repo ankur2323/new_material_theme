@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// @mui material components
+
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
@@ -25,79 +25,80 @@ import MKTypography from "components/MKTypography";
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
-import team1 from "assets/images/team-5.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
-import team4 from "assets/images/ivana-square.jpg";
+import jatin from "assets/images/jatin_bhatia.jpeg";
+import ritesh from "assets/images/jatin_bhatia.jpeg";
+import ankur from "assets/images/ankur_tiwari.jpeg";
+import aman from "assets/images/aman_garg.jpeg";
+
 
 function Team() {
-  return (
-    <MKBox
-      component="section"
-      variant="gradient"
-      bgColor="dark"
-      position="relative"
-      py={6}
-      px={{ xs: 2, lg: 0 }}
-      mx={-2}
-    >
-      <Container>
-        <Grid container>
-          <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3" color="white">
-              The Executive Team
-            </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
-            </MKTypography>
-          </Grid>
-        </Grid>
-        <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCard
-                image={team1}
-                name="Jatin Bhatia"
-                position={{ color: "info", label: "Head, Accounting & Digital Transformation" }}
-                description="Head, Accounting & Digital Transformation"
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
-              <HorizontalTeamCard
-                image={team2}
-                name="Ritesh Shah"
-                position={{ color: "info", label: "Head, CFO Consulting & Financial Reporting" }}
-                description="Head, CFO Consulting & Financial Reporting"
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team3}
-                name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team4}
-                name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid>
-        </Grid>
-      </Container>
-    </MKBox>
-  );
+    return (
+        <MKBox
+            component="section"
+            variant="gradient"
+            bgColor="light"
+            position="relative"
+            py={6}
+            px={{xs: 2, lg: 0}}
+            mx={-2}
+        >
+            <Container>
+                <Grid container>
+                    <Grid item xs={12} md={12} sx={{mb: 6, textAlign: "center"}}>
+                        <MKTypography variant="h3" color="Black">
+                            The Executive Team
+                        </MKTypography>
+                        <MKTypography variant="body2" color="Black" opacity={0.9}>
+                            There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
+                            at. That&apos;s my skill.
+                        </MKTypography>
+                    </Grid>
+                </Grid>
+                <Grid container spacing={3}>
+                    <Grid item xs={12} lg={6}>
+                        <MKBox mb={1}>
+                            <HorizontalTeamCard
+                                image={jatin}
+                                name="Jatin Bhatia"
+                                position={{color: "info", label: "Head, Accounting & Digital Transformation"}}
+                                description="Head, Accounting & Digital Transformation"
+                            />
+                        </MKBox>
+                    </Grid>
+                    <Grid item xs={12} lg={6}>
+                        <MKBox mb={1}>
+                            <HorizontalTeamCard
+                                image={jatin}
+                                name="Ritesh Shah"
+                                position={{color: "info", label: "Head, CFO Consulting & Financial Reporting"}}
+                                description="Head, CFO Consulting & Financial Reporting"
+                            />
+                        </MKBox>
+                    </Grid>
+                    <Grid item xs={12} lg={6}>
+                        <MKBox mb={{xs: 1, lg: 0}}>
+                            <HorizontalTeamCard
+                                image={ankur}
+                                name="Ankur Tiwari"
+                                position={{color: "info", label: "System Engineer"}}
+                                description="Developer"
+                            />
+                        </MKBox>
+                    </Grid>
+                    <Grid item xs={12} lg={6}>
+                        <MKBox mb={{xs: 1, lg: 0}}>
+                            <HorizontalTeamCard
+                                image={aman}
+                                name="Aman Garg"
+                                position={{color: "info", label: "JS Developer"}}
+                                description="Lead Manager"
+                            />
+                        </MKBox>
+                    </Grid>
+                </Grid>
+            </Container>
+        </MKBox>
+    );
 }
 
 export default Team;

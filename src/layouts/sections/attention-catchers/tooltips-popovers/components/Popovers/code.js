@@ -1,6 +1,6 @@
 const popoversCode = `import { useState } from "react";
 
-// @mui material components
+
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";

@@ -1,4 +1,4 @@
-const typographyCode = `// @mui material components
+const typographyCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 

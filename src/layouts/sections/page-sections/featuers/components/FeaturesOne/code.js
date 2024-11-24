@@ -1,4 +1,4 @@
-const featuresOneCode = `// @mui material components
+const featuresOneCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";

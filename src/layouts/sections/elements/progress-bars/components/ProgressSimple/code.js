@@ -1,4 +1,4 @@
-const progressSimpleCode = `// @mui material components
+const progressSimpleCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";

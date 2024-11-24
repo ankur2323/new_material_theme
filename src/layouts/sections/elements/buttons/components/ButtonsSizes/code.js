@@ -1,4 +1,4 @@
-const buttonsSizesCode = `// @mui material components
+const buttonsSizesCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";

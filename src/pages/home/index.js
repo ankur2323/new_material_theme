@@ -1,5 +1,3 @@
-
-// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -15,15 +13,15 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+import Counters from "pages/home/sections/Counters";
+import Information from "pages/home/sections/Information";
+import OurSevices from "./sections/OurSevices";
+import Pages from "pages/home/sections/Pages";
+import Testimonials from "pages/home/sections/Testimonials";
+import Download from "pages/home/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+import BuiltByDevelopers from "pages/home/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
@@ -32,81 +30,72 @@ import footerRoutes from "footer.routes";
 // Images
 import bgImage from "assets/images/4k_background_Blockchain.gif";
 import Team from "../LandingPages/AboutUs/sections/Team";
+import MKButton from "../../components/MKButton";
 
 function Home() {
-  return (
-    <>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "request demo",
-          color: "info",
-        }}
-        sticky
-      />
-      <MKBox
-        minHeight="75vh"
-        width="100%"
-        sx={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
-        <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
-              variant="h1"
-              color="white"
-              mt={-6}
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
+    return (
+        <>
+            <MKBox
+                minHeight="75vh"
+                width="100%"
+                sx={{
+                    backgroundImage: `url(${bgImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "top",
+                    display: "grid",
+                    placeItems: "center",
+                }}
             >
-              SUVICORP{" "}
-            </MKTypography>
-            <MKTypography
-              variant="body1"
-              color="white"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
+                <Container>
+                    <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+                        <MKTypography
+                            variant="h1"
+                            color="white"
+                            mt={-6}
+                            mb={1}
+                            sx={({breakpoints, typography: {size}}) => ({
+                                [breakpoints.down("md")]: {
+                                    fontSize: size["3xl"],
+                                },
+                            })}
+                        >
+                            SUVICORP{" "}
+                        </MKTypography>
+                        <MKTypography
+                            variant="body1"
+                            color="white"
+                            textAlign="center"
+                            px={{xs: 6, lg: 12}}
+                            mt={1}
+                        >
+                            Aiming at financial excellence and digital transformation!.
+                            Transforming Data into Insight, Empowering Decisions with Precision.
+                            Your Partner in Intelligent Audit and Analytics Solutions.
+                        </MKTypography>
+                        <MKButton color="default" sx={{color: ({palette: {dark}}) => dark.main}}>
+                            Contact Us
+                        </MKButton>
+                    </Grid>
+                </Container>
+            </MKBox>
+            <Card
+                sx={{
+                    p: 2,
+                    mx: {xs: 2, lg: 3},
+                    mt: -8,
+                    mb: 4,
+                    backgroundColor: ({palette: {white}, functions: {rgba}}) => rgba(white.main, 0.8),
+                    backdropFilter: "saturate(200%) blur(30px)",
+                    boxShadow: ({boxShadows: {xxl}}) => xxl,
+                }}
             >
-               Transforming Data into Insight, Empowering Decisions with Precision.
-                Your Partner in Intelligent Audit and Analytics Solutions.
-            </MKTypography>
-          </Grid>
-        </Container>
-      </MKBox>
-      <Card
-        sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
-          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
-          backdropFilter: "saturate(200%) blur(30px)",
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
-        }}
-      >
+                <OurSevices/>
+                <Information/>
 
-        <Information />
-        <DesignBlocks />
-          <Team />
- {/*       <Pages />*/}
 
-     {/*   <Testimonials />*/}
-       {/* <Download />*/}
-{/*
-          Thank you for your support*/}
-        <MKBox pt={18} pb={6}>
+                <Team/>
+
+                {/*  <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
@@ -157,13 +146,13 @@ function Home() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
-      </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
-    </>
-  );
+        </MKBox>*/}
+            </Card>
+            <MKBox pt={6} px={1} mt={6}>
+                <DefaultFooter content={footerRoutes}/>
+            </MKBox>
+        </>
+    );
 }
 
 export default Home;

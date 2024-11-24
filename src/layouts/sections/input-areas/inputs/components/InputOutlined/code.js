@@ -1,4 +1,4 @@
-const inputOutlinedCode = `// @mui material components
+const inputOutlinedCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 

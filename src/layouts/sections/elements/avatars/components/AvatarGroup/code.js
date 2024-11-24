@@ -1,4 +1,4 @@
-const avatarGroupCode = `// @mui material components
+const avatarGroupCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MuiAvatarGroup from "@mui/material/AvatarGroup";

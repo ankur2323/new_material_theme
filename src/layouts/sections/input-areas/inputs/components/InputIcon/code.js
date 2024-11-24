@@ -1,4 +1,4 @@
-const inputIconCode = `// @mui material components
+const inputIconCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import InputAdornment from "@mui/material/InputAdornment";

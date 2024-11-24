@@ -1,4 +1,4 @@
-const buttonsIconRightCode = `// @mui material components
+const buttonsIconRightCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";

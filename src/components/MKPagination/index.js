@@ -1,4 +1,4 @@
-import { forwardRef, createContext, useContext, useMemo } from "react";
+import {forwardRef, createContext, useContext, useMemo} from "react";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -13,12 +13,12 @@ import MKPaginationItemRoot from "components/MKPagination/MKPaginationItemRoot";
 const Context = createContext();
 
 const MKPagination = forwardRef(
-    ({ item, variant, color, size, active, children, placement, ...rest }, ref) => {
+    ({item, variant, color, size, active, children, placement, ...rest}, ref) => {
         const context = useContext(Context);
 
         // Calculate paginationSize and variant based on context and item prop
         const paginationSize = context && item ? context.size : null;
-        const paginationProps = useMemo(() => ({ variant, color, size }), [variant, color, size]);
+        const paginationProps = useMemo(() => ({variant, color, size}), [variant, color, size]);
 
         // Determine placement value
         let placementValue = "flex-end";
@@ -38,7 +38,7 @@ const MKPagination = forwardRef(
                         color={active ? context.color : "secondary"}
                         iconOnly
                         circular
-                        ownerState={{ variant, active, paginationSize }}
+                        ownerState={{variant, active, paginationSize}}
                     >
                         {children}
                     </MKPaginationItemRoot>
@@ -47,7 +47,7 @@ const MKPagination = forwardRef(
                         display="flex"
                         justifyContent={placementValue}
                         alignItems="center"
-                        sx={{ listStyle: "none" }}
+                        sx={{listStyle: "none"}}
                     >
                         {children}
                     </MKBox>

@@ -1,4 +1,4 @@
-const inputDynamicCode = `// @mui material components
+const inputDynamicCode = `
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
